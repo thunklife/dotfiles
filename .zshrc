@@ -51,7 +51,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="/home/wilhelmson/.rvm/gems/ruby-2.1.2/bin:/home/wilhelmson/.rvm/gems/ruby-2.1.2@global/bin:/home/wilhelmson/.rvm/rubies/ruby-2.1.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/wilhelmson/.rvm/bin:/home/wilhelmson/.cabal/bin:/opt/cabal/1.20/bin:/opt/ghc/7.8.3/bin:/opt/happy/1.19.4/bin:/opt/alex/3.1.3/bin:/usr/local/bin/flow:/home/wilhelmson/.cabal/bin/:$PATH"
+export PATH="~/.cabal/bin:$PATH:/opt/cabal/1.20/bin:/opt/ghc/7.8.4/bin:/opt/happy/1.19.4/bin:/opt/alex/3.1.3:/opt/emacs/bin:"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -78,3 +78,5 @@ export PATH="/home/wilhelmson/.rvm/gems/ruby-2.1.2/bin:/home/wilhelmson/.rvm/gem
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+# need sudo for stupid eOS bug.
+alias spacemacs="sudo emacs"
