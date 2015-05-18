@@ -134,16 +134,17 @@ before layers configuration."
   )
 
 (defun dotspacemacs/config ()
+  (setq c-basic-offset 2)
+  (setq indent-tabs-mode nil)
   (setq powerline-default-separator 'arrow)
   (global-linum-mode)
   (global-flycheck-mode)
   (fci-mode)
   (fancy-battery-mode t)
-  (setq-default indent-tabs-mode nil)
-  (setq-default tab-stop-list (number-sequence 2 120 2))
   (setq-default flycheck-disabled-checkers '(javascript-jshint))
   (flycheck-add-mode 'javascript-eslint 'web-mode)
   (setq-default flycheck-eslintrc "~/.eslintrc")
+  (setq haskell-stylish-on-save t)
 )
 
 ;; Do not write anything past this comment. This is where Emacs will
