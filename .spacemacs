@@ -21,6 +21,10 @@
       syntax-checking
       javascript
       html
+      (haskell :variables
+               haskell-enable-hindent-style "chris-done"
+               haskell-enable-ghci-ng-support t
+               haskell-enable-company-mode t)
      )
    ;; A list of packages and/or extensions that will not be install and loaded.
    dotspacemacs-excluded-packages '()
@@ -131,6 +135,8 @@ before layers configuration."
    dotspacemacs-default-package-repository nil
    )
   ;; User initialization goes here
+  (autoload 'haskell-indentation-enable-show-indentations "haskell-indentation")
+  (autoload 'haskell-indentation-disable-show-indentations "haskell-indentation")
   )
 
 (defun dotspacemacs/config ()
