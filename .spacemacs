@@ -22,9 +22,9 @@
       javascript
       html
       (haskell :variables
-               haskell-enable-hindent-style "chris-done"
                haskell-enable-ghci-ng-support t
-               haskell-enable-company-mode t)
+               haskell-enable-hindent-style "chris-done"
+               haskell-enable-shm-support t)
      )
    ;; A list of packages and/or extensions that will not be install and loaded.
    dotspacemacs-excluded-packages '()
@@ -150,7 +150,6 @@ before layers configuration."
   (setq-default flycheck-disabled-checkers '(javascript-jshint))
   (flycheck-add-mode 'javascript-eslint 'web-mode)
   (setq-default flycheck-eslintrc "~/.eslintrc")
-  (setq haskell-stylish-on-save t)
 )
 
 ;; Do not write anything past this comment. This is where Emacs will
