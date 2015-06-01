@@ -25,6 +25,8 @@
                haskell-enable-ghci-ng-support t
                haskell-enable-hindent-style "chris-done"
                haskell-enable-shm-support t)
+      purescript
+      emacs-lisp
      )
    ;; A list of packages and/or extensions that will not be install and loaded.
    dotspacemacs-excluded-packages '()
@@ -51,7 +53,7 @@ before layers configuration."
    ;; directory. A string value must be a path to a .PNG file.
    ;; If the value is nil then no banner is displayed.
    ;; dotspacemacs-startup-banner 'official
-   dotspacemacs-startup-banner "~/Pictures/kermit.png"
+   dotspacemacs-startup-banner 'doge
    ;; t if you always want to see the changelog at startup
    dotspacemacs-always-show-changelog t
    ;; List of items to show in the startup buffer. If nil it is disabled.
@@ -60,7 +62,8 @@ before layers configuration."
    ;; List of themes, the first of the list is loaded when spacemacs starts.
    ;; Press <SPC> T n to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
-   dotspacemacs-themes '(solarized-light
+   dotspacemacs-themes '(misterioso
+                         solarized-light
                          solarized-dark
                          leuven
                          monokai
@@ -142,8 +145,9 @@ before layers configuration."
 (defun dotspacemacs/config ()
   (setq c-basic-offset 2)
   (setq indent-tabs-mode nil)
-  (setq powerline-default-separator 'arrow)
+  (setq powerline-default-separator nil)
   (global-linum-mode)
+  (global-hl-line-mode -1)
   (global-flycheck-mode)
   (fci-mode)
   (fancy-battery-mode t)

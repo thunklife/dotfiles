@@ -24,3 +24,8 @@ npm install -g tern
 npm install -g babel
 npm install -g vault
 npm install -g eslint
+#for purescript
+npm install -g purescript
+npm install -g gulp
+npm install -g bower
+npm install -g pulp
