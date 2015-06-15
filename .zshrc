@@ -82,7 +82,7 @@ alias gco="git checkout"
 alias gb="git branch"
 alias gpo="git push origin"
 # s for shove...get it?
-alias gso="git pull origin"
+alias gso="git pull"
 alias grb="git rebase"
 alias gs="git status"
 alias gf="git reflog"
