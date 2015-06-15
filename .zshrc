@@ -80,9 +80,9 @@ export PATH="/opt/cabal/1.20/bin:/opt/ghc/7.8.4/bin:/opt/happy/1.19.4/bin:/opt/a
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias gco="git checkout"
 alias gb="git branch"
-alias gpo="git push origin"
+alias gp="git push origin"
 # s for shove...get it?
-alias gso="git pull"
+alias gs="git pull"
 alias grb="git rebase"
 alias gs="git status"
 alias gf="git reflog"
