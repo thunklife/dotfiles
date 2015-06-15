@@ -72,7 +72,7 @@ before layers configuration."
    dotspacemacs-colorize-cursor-according-to-state t
    ;; Default font. `powerline-scale' allows to quickly tweak the mode-line
    ;; size to make separators look not too crappy.
-   dotspacemacs-default-font '("Source Code Pro"
+   dotspacemacs-default-font '("Monaco for powerline"
                                :size 13
                                :weight normal
                                :width normal
@@ -143,17 +143,27 @@ before layers configuration."
   )
 
 (defun dotspacemacs/config ()
+  (setq-default default-tab-width 2 indent-tabs-mode nil)
   (setq c-basic-offset 2)
-  (setq indent-tabs-mode nil)
   (setq powerline-default-separator nil)
+  (setq javascript-inde-level 2)
+  (setq js2-basic-offset 2)
+  (setq web-mode-markup-indent-offset 2)
+  (setq web-mode-css-indent-offset 2)
+  (setq web-mode-code-indent-offset 2)
+  (setq css-indent-offset 2)
   (global-linum-mode)
   (global-hl-line-mode -1)
   (global-flycheck-mode)
   (fci-mode)
   (fancy-battery-mode t)
-  (setq-default flycheck-disabled-checkers '(javascript-jshint))
-  (flycheck-add-mode 'javascript-eslint 'web-mode)
-  (setq-default flycheck-eslintrc "~/.eslintrc")
+  ;;(setq-default flycheck-disabled-checkers '(javascript-jshint))
+  ;;(flycheck-add-mode 'javascript-eslint 'web-mode)
+  ;;(setq-default flycheck-eslintrc "~/.eslintrc")
+  (flycheck-add-mode 'javascript-jscs 'web-mode)
+  (flycheck-add-mode 'javascript-jshint 'web-mode)
+  (setq-default flycheck-jshintrc "~/.jshintrc")
+  (setq-default flycheck-jscsrc "~/.jscsrc")
 )
 
 ;; Do not write anything past this comment. This is where Emacs will
