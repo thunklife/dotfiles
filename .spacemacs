@@ -27,6 +27,7 @@
                haskell-enable-shm-support t)
       purescript
       emacs-lisp
+      elm
      )
    ;; A list of packages and/or extensions that will not be install and loaded.
    dotspacemacs-excluded-packages '()
@@ -140,6 +141,7 @@ before layers configuration."
   ;; User initialization goes here
   (autoload 'haskell-indentation-enable-show-indentations "haskell-indentation")
   (autoload 'haskell-indentation-disable-show-indentations "haskell-indentation")
+  (setq-default git-magit-status-fullscreen t)
   )
 
 (defun dotspacemacs/config ()
@@ -161,9 +163,9 @@ before layers configuration."
   ;;(flycheck-add-mode 'javascript-eslint 'web-mode)
   ;;(setq-default flycheck-eslintrc "~/.eslintrc")
   (flycheck-add-mode 'javascript-jscs 'web-mode)
-  (flycheck-add-mode 'javascript-jshint 'web-mode)
   (setq-default flycheck-jshintrc "~/.jshintrc")
   (setq-default flycheck-jscsrc "~/.jscsrc")
+  (setq magit-repo-dirs '("~/Projects/"))
 )
 
 ;; Do not write anything past this comment. This is where Emacs will
