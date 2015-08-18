@@ -51,7 +51,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="/opt/cabal/1.20/bin:/opt/ghc/7.8.4/bin:/opt/happy/1.19.4/bin:/opt/alex/3.1.3:/opt/emacs/bin:~/.cabal/bin/:$PATH"
+export PATH=~/.rbenv/shims:/opt/cabal/1.20/bin:/opt/ghc/7.8.4/bin:/opt/happy/1.19.4/bin:/opt/alex/3.1.3:/opt/emacs/bin:~/.cabal/bin/:~/.local/bin/:$PATH
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -69,6 +69,10 @@ export PATH="/opt/cabal/1.20/bin:/opt/ghc/7.8.4/bin:/opt/happy/1.19.4/bin:/opt/a
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
+
+password() {
+    vault $1 | pbcopy
+}
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh

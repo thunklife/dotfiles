@@ -21,12 +21,13 @@
       syntax-checking
       javascript
       html
-      (haskell :variables
-               haskell-enable-ghci-ng-support t
-               haskell-enable-hindent-style "chris-done"
-               haskell-enable-shm-support t)
+      haskell
       purescript
       emacs-lisp
+      ruby
+      themes-megapack
+      (colors :variables
+              colors-enable-nyan-cat-progress-bar t)
      )
    ;; A list of packages and/or extensions that will not be install and loaded.
    dotspacemacs-excluded-packages '()
@@ -62,12 +63,11 @@ before layers configuration."
    ;; List of themes, the first of the list is loaded when spacemacs starts.
    ;; Press <SPC> T n to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
-   dotspacemacs-themes '(misterioso
-                         solarized-light
-                         solarized-dark
-                         leuven
-                         monokai
-                         zenburn)
+   dotspacemacs-themes '(subatomic
+                         planet
+                         material-light
+                         obsidian
+                         misterioso)
    ;; If non nil the cursor color matches the state color.
    dotspacemacs-colorize-cursor-according-to-state t
    ;; Default font. `powerline-scale' allows to quickly tweak the mode-line
@@ -141,13 +141,14 @@ before layers configuration."
   (autoload 'haskell-indentation-enable-show-indentations "haskell-indentation")
   (autoload 'haskell-indentation-disable-show-indentations "haskell-indentation")
   (setq-default git-magit-status-fullscreen t)
+  (setq-default ruby-enable-ruby-on-rails-support t)
   )
 
 (defun dotspacemacs/config ()
   (setq-default default-tab-width 2 indent-tabs-mode nil)
   (setq c-basic-offset 2)
   (setq powerline-default-separator nil)
-  (setq javascript-inde-level 2)
+  (setq javascript-indent-level 2)
   (setq js2-basic-offset 2)
   (setq web-mode-markup-indent-offset 2)
   (setq web-mode-css-indent-offset 2)
@@ -158,12 +159,15 @@ before layers configuration."
   (global-flycheck-mode)
   (fci-mode)
   (fancy-battery-mode t)
-  ;;(setq-default flycheck-disabled-checkers '(javascript-jshint))
-  ;;(flycheck-add-mode 'javascript-eslint 'web-mode)
-  ;;(setq-default flycheck-eslintrc "~/.eslintrc")
-  (flycheck-add-mode 'javascript-jscs 'web-mode)
-  (setq-default flycheck-jshintrc "~/.jshintrc")
-  (setq-default flycheck-jscsrc "~/.jscsrc")
+  (setq-default flycheck-disabled-checkers
+                (append flycheck-disabled-checkers
+                        '(javascript-jshint)
+                        '(javascript-jscs)))
+  (flycheck-add-mode 'javascript-eslint 'web-mode)
+  (setq-default flycheck-eslintrc "~/.eslintrc")
+  ;;(flycheck-add-mode 'javascript-jscs 'web-mode)
+  ;; (setq-default flycheck-jshintrc "~/.jshintrc")
+  ;; (setq-default flycheck-jscsrc "~/.jscsrc")
   (setq magit-repo-dirs '("~/Projects/"))
 )
 
