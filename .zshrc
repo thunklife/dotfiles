@@ -51,7 +51,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH=~/.rbenv/shims:/opt/cabal/1.20/bin:/opt/ghc/7.8.4/bin:/opt/happy/1.19.4/bin:/opt/alex/3.1.3:/opt/emacs/bin:~/.cabal/bin/:~/.local/bin/:$PATH
+export PATH=~/Users/jessewilliamson/.stack/snapshots/x86_64-osx/lts-5.0/7.10.3/bin:/Users/jessewilliamson/.stack/programs/x86_64-osx/ghc-7.10.3/bin:/.rbenv/shims:/opt/emacs/bin:~/.cabal/bin/:~/.local/bin/:~/.npm-packages/bin:$PATH
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -96,3 +96,4 @@ alias gco='git checkout'
 alias gcb='git copy-branch-name'
 alias gb='git branch'
 alias gs='git status -sb' # upgrade your git if -sb breaks for you. it's fun.
+unalias gm

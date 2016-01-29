@@ -28,6 +28,7 @@
       themes-megapack
       (colors :variables
               colors-enable-nyan-cat-progress-bar t)
+      elm
      )
    ;; A list of packages and/or extensions that will not be install and loaded.
    dotspacemacs-excluded-packages '()
@@ -54,7 +55,7 @@ before layers configuration."
    ;; directory. A string value must be a path to a .PNG file.
    ;; If the value is nil then no banner is displayed.
    ;; dotspacemacs-startup-banner 'official
-   dotspacemacs-startup-banner 'doge
+   dotspacemacs-startup-banner 'official
    ;; t if you always want to see the changelog at startup
    dotspacemacs-always-show-changelog t
    ;; List of items to show in the startup buffer. If nil it is disabled.
@@ -141,7 +142,7 @@ before layers configuration."
   (autoload 'haskell-indentation-enable-show-indentations "haskell-indentation")
   (autoload 'haskell-indentation-disable-show-indentations "haskell-indentation")
   (setq-default git-magit-status-fullscreen t)
-  (setq-default ruby-enable-ruby-on-rails-support t)
+  (setq-default ruby-version-manager 'rbenv)
   )
 
 (defun dotspacemacs/config ()
