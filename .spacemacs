@@ -170,6 +170,7 @@ before layers configuration."
   ;; (setq-default flycheck-jshintrc "~/.jshintrc")
   ;; (setq-default flycheck-jscsrc "~/.jscsrc")
   (setq magit-repo-dirs '("~/Projects/"))
+  (setq-default fill-column-indicator t)
 )
 
 ;; Do not write anything past this comment. This is where Emacs will
