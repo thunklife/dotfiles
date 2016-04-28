@@ -55,7 +55,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH=~/Users/jessewilliamson/.stack/snapshots/x86_64-osx/lts-5.0/7.10.3/bin:/Users/jessewilliamson/.stack/programs/x86_64-osx/ghc-7.10.3/bin:/.rbenv/shims:/opt/emacs/bin:~/.cabal/bin/:~/.local/bin/:~/.npm-packages/bin:$PATH
+export PATH=/home/jesse/.stack/snapshots/x86_64-linux/lts-5.1/7.10.3/bin:/home/jesse/.stack/programs/x86_64-linux/ghc-7.10.3/bin:/home/jesse/.stack/snapshots/x86_64-linux/lts-5.1/7.10.3/bin:/opt/emacs/bin:~/.cabal/bin/:~/.local/bin/:~/.npm-packages/bin:$PATH
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -100,4 +100,5 @@ alias gco='git checkout'
 alias gcb='git copy-branch-name'
 alias gb='git branch'
 alias gs='git status -sb' # upgrade your git if -sb breaks for you. it's fun.
+alias spacemacs='XLIB_SKIP_ARGB_VISUALS=1 emacs'
 unalias gm
