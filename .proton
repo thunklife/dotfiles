@@ -34,16 +34,8 @@
     :lang/html
     :lang/haskell
     :lang/json
-    :lang/markdown
-    :lang/ruby
-    ;; :lang/csharp
-    ;; :lang/python
-    ;; :lang/julia
-    ;; :lang/latex
-    ;; :lang/elixir
-    ;; :lang/markdown
-    ;; :lang/rust
-    ;; :lang/javascript
+    :lang/elm
+    :lang/typescript
 
     ;; -----------------------------------
     ;; Frameworks
@@ -63,7 +55,15 @@
   ;; Will get uninstalled so choose wisely!
   :additional-packages
   [
-    ;; :pigments
+    :pigments
+    :language-purescript
+    :ide-purescript
+    :ex-mode
+    ;; elm
+    :language-elm
+    :elmjutsu
+    :elm-format
+    :linter-elm-make
   ]
 
   ;; Packages that you want to disable.
@@ -81,7 +81,7 @@
   :configuration
   [
     ;; appearance
-    ["editor.fontFamily" "Hack"]
+    ["editor.fontFamily" "Operator Mono"]
 
     ;; the current default theme
     ["core.themes" ["nucleus-dark-ui" "atom-dark-fusion-syntax"]]
@@ -95,7 +95,7 @@
     ["proton.core.wipeUserConfigs" false]
 
     ;; prefer classic vim mode over vim-mode-plus? Change this to :vim-mode
-    ["proton.core.vim-provider" :vim-mode]
+    ["proton.core.inputProvider" :vim-mode]
   ]
 
   ;; Don't like a keybinding or want to add something yourself? Do it here
@@ -107,6 +107,5 @@
             ;; Want to rebind ESC to something else? You can do that here.
             ;; If you are good with esc, just remove the following line.
             {:selector "atom-text-editor.vim-mode.insert-mode" :keymap [["f d" "vim-mode:activate-normal-mode"]]}
-            ;; {:selector "atom-text-editor.vim-mode.insert-mode" :keymap [["f d" "vim-mode:activate-normal-mode"]]}
   ]
 }
