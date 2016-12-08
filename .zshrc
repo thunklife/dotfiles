@@ -1,6 +1,6 @@
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
-
+# Pure prompt
 autoload -U promptinit && promptinit
 PURE_PROMPT_SYMBOL=λ
 prompt pure
@@ -53,9 +53,12 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
+#/Users/Jesse/.stack/snapshots/x86_64-osx/lts-5.15/7.10.3/bin:/Users/Jesse/.stack/programs/x86_64-osx/ghc-7.10.3/bin
 
-export PATH=/home/jesse/.stack/snapshots/x86_64-linux/lts-5.1/7.10.3/bin:/home/jesse/.stack/programs/x86_64-linux/ghc-7.10.3/bin:/home/jesse/.stack/snapshots/x86_64-linux/lts-5.1/7.10.3/bin:/opt/emacs/bin:~/.cabal/bin/:~/.local/bin/:~/.npm-packages/bin:$PATH
+export PATH=~/.stack/snapshots/x86_64-osx/lts-5.15/7.10.3/bin:~/.stack/programs/x86_64-osx/ghc-7.10.3/bin:~/.local/bin/:~/.npm-packages/bin:$NPM_PACKAGES/bin:$PATH
 # export MANPATH="/usr/local/man:$MANPATH"
+unset MANPATH
+export MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8

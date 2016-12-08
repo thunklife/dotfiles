@@ -29,12 +29,10 @@
     ;; Languages
     ;; Get more at github.com/dvcrn/proton/tree/master/src/proton/layers/lang
     ;; -----------------------------------
-    :lang/sass
     :lang/javascript
     :lang/html
     :lang/haskell
     :lang/json
-    :lang/elm
     :lang/typescript
 
     ;; -----------------------------------
@@ -55,10 +53,13 @@
   ;; Will get uninstalled so choose wisely!
   :additional-packages
   [
-    :pigments
+    :ex-mode
     :language-purescript
     :ide-purescript
+<<<<<<< HEAD
     :ex-mode
+=======
+>>>>>>> ded33e9f5a3bdef95a80df0ffc262968cb782fd2
   ]
 
   ;; Packages that you want to disable.
@@ -77,6 +78,10 @@
   [
     ;; appearance
     ["editor.fontFamily" "Monoid"]
+<<<<<<< HEAD
+=======
+    ["editor.fontSize" 14]
+>>>>>>> ded33e9f5a3bdef95a80df0ffc262968cb782fd2
 
     ;; the current default theme
     ["core.themes" ["nucleus-dark-ui" "atom-dark-fusion-syntax"]]
@@ -87,7 +92,7 @@
     ;; proton configuration
     ["proton.core.showTabBar" true]
     ["proton.core.relativeLineNumbers" false]
-    ["proton.core.wipeUserConfigs" false]
+    ["proton.core.wipeUserConfigs" true]
 
     ;; prefer classic vim mode over vim-mode-plus? Change this to :vim-mode
     ["proton.core.inputProvider" :vim-mode]
