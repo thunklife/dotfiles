@@ -101,3 +101,6 @@ alias gb='git branch'
 alias gs='git status -sb' # upgrade your git if -sb breaks for you. it's fun.
 alias spacemacs='XLIB_SKIP_ARGB_VISUALS=1 emacs'
 unalias gm
+
+export NVM_DIR="/Users/jessewilliamson/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm

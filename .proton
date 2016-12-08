@@ -59,11 +59,6 @@
     :language-purescript
     :ide-purescript
     :ex-mode
-    ;; elm
-    :language-elm
-    :elmjutsu
-    :elm-format
-    :linter-elm-make
   ]
 
   ;; Packages that you want to disable.
@@ -81,7 +76,7 @@
   :configuration
   [
     ;; appearance
-    ["editor.fontFamily" "Operator Mono"]
+    ["editor.fontFamily" "Monoid"]
 
     ;; the current default theme
     ["core.themes" ["nucleus-dark-ui" "atom-dark-fusion-syntax"]]
