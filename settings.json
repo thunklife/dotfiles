@@ -1,0 +1,14 @@
+// Place your settings in this file to overwrite the default settings
+{
+    "vim.insertModeKeyBindings": [
+       {
+           "before": ["f", "d"],
+           "after": ["<Esc>"]
+       }
+    ],
+    "editor.fontFamily": "Monoid",
+    "editor.tabSize": 2,  
+    "editor.roundedSelection": true,
+    "editor.wrappingColumn": 80,
+    "editor.fontLigatures": true
+}
