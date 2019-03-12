@@ -6,9 +6,24 @@
            "after": ["<Esc>"]
        }
     ],
-    "editor.fontFamily": "Monoid",
+    "vim.leader": "<space>",
+    "editor.fontFamily": "Fira Code",
+    "editor.fontSize": 13,
     "editor.tabSize": 2,  
     "editor.roundedSelection": true,
-    "editor.wrappingColumn": 80,
-    "editor.fontLigatures": true
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 120,
+    "editor.fontLigatures": true,
+    "window.zoomLevel": 0,
+    "workbench.colorTheme": "Nord",
+    "workbench.iconTheme": "file-icons",
+    "vim.disableAnnoyingNeovimMessage": true,
+    "editor.renderIndentGuides": false ,
+    "editor.renderWhitespace": "all",
+    "workbench.startupEditor": "newUntitledFile",
+    "terminal.integrated.fontLigatures": true,
+    "terminal.integrated.fontSize": 13,
+    "reason.formatOnSave": true,
+    "git.enableSmartCommit": true,
+    "explorer.confirmDelete": false,
 }

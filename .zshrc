@@ -55,7 +55,7 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 #/Users/Jesse/.stack/snapshots/x86_64-osx/lts-5.15/7.10.3/bin:/Users/Jesse/.stack/programs/x86_64-osx/ghc-7.10.3/bin
 
-export PATH=~/.stack/snapshots/x86_64-osx/lts-5.15/7.10.3/bin:~/.stack/programs/x86_64-osx/ghc-7.10.3/bin:~/.local/bin/:~/.npm-packages/bin:$NPM_PACKAGES/bin:$PATH
+export PATH=~/.local/bin/:~/.npm-packages/bin:$NPM_PACKAGES/bin:~/elm-format:/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH
 # export MANPATH="/usr/local/man:$MANPATH"
 unset MANPATH
 export MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
@@ -104,6 +104,3 @@ alias gb='git branch'
 alias gs='git status -sb' # upgrade your git if -sb breaks for you. it's fun.
 alias spacemacs='XLIB_SKIP_ARGB_VISUALS=1 emacs'
 unalias gm
-
-export NVM_DIR="/Users/jessewilliamson/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
