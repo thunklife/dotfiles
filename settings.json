@@ -26,4 +26,7 @@
     "reason.formatOnSave": true,
     "git.enableSmartCommit": true,
     "explorer.confirmDelete": false,
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true
+    }
 }
