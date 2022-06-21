@@ -1,32 +1,57 @@
-// Place your settings in this file to overwrite the default settings
+
 {
-    "vim.insertModeKeyBindings": [
-       {
-           "before": ["f", "d"],
-           "after": ["<Esc>"]
-       }
-    ],
-    "vim.leader": "<space>",
-    "editor.fontFamily": "Fira Code",
-    "editor.fontSize": 13,
-    "editor.tabSize": 2,  
-    "editor.roundedSelection": true,
-    "editor.wordWrap": "wordWrapColumn",
-    "editor.wordWrapColumn": 120,
-    "editor.fontLigatures": true,
-    "window.zoomLevel": 0,
-    "workbench.colorTheme": "Nord",
-    "workbench.iconTheme": "file-icons",
-    "vim.disableAnnoyingNeovimMessage": true,
-    "editor.renderIndentGuides": false ,
+	"vim.insertModeKeyBindings": [
+		{
+			"before": ["f", "d"],
+			"after": ["<Esc>"]
+		}
+	 ],
+	"vim.leader": "<space>",
+	"editor.roundedSelection": true,
+	"editor.wordWrap": "off",
+	"editor.wordWrapColumn": 120,
+	"window.zoomLevel": 0,
+    "editor.autoClosingBrackets": "always",
+    "editor.autoClosingQuotes": "always",
+    "editor.detectIndentation": true,
     "editor.renderWhitespace": "all",
-    "workbench.startupEditor": "newUntitledFile",
-    "terminal.integrated.fontLigatures": true,
-    "terminal.integrated.fontSize": 13,
-    "reason.formatOnSave": true,
-    "git.enableSmartCommit": true,
-    "explorer.confirmDelete": false,
-    "editor.codeActionsOnSave": {
-        "source.fixAll": true
-    }
+    "editor.fontSize": 15,
+    "editor.fontFamily": "'Fira Code'",
+	"editor.insertSpaces": false,
+	"editor.fontLigatures": true,
+	"workbench.iconTheme": "file-icons",
+	"terminal.integrated.fontSize": 15,
+	"git.enableSmartCommit": true,
+	"explorer.confirmDelete": false,
+	"editor.codeActionsOnSave": {
+		"source.fixAll": true
+	},
+	"workbench.startupEditor": "newUntitledFile",
+	"javascript.updateImportsOnFileMove.enabled": "always",
+	"debug.node.autoAttach": "on",
+	"explorer.confirmDragAndDrop": false,
+	"files.autoSave": "afterDelay",
+	"javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": false,
+	"[javascript]": {
+		"editor.defaultFormatter": "vscode.typescript-language-features"
+	},
+	"haskell.hlint.executablePath": "/Users/jesse.williamson/.local/bin/hlint",
+	"debug.javascript.autoAttachFilter": "always",
+	"editor.tabSize": 8,
+	"editor.cursorStyle": "line",
+	"editor.lineNumbers": "on",
+	"editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+	"workbench.editor.untitled.hint": "hidden",
+	"editor.suggestSelection": "first",
+	"vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+	"java.project.importHint": false,
+	"files.exclude": {
+		"**/.classpath": true,
+		"**/.project": true,
+		"**/.settings": true,
+		"**/.factorypath": true
+	},
+	"editor.unicodeHighlight.ambiguousCharacters": false,
+	"workbench.colorTheme": "Nord",
+	"editor.guides.indentation": true
 }
