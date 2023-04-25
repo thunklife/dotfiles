@@ -1,23 +1,18 @@
-export ZSH=$HOME/.oh-my-zsh
-autoload -U promptinit && promptinit
-PURE_PROMPT_SYMBOL=🦄
-prompt pure
+export ZSH="$HOME/.oh-my-zsh"
+
+ZSH_THEME="robbyrussell"
 
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
-export PATH=~/.emacs.d/bin:~/.local/bin/:~/.npm-packages/bin:$NPM_PACKAGES/bin:~/elm-format:/Applications/Postgres.app/Contents/Versions/latest/bin:~/.cabal/bin/:$PATH
-# export MANPATH="/usr/local/man:$MANPATH"
-unset MANPATH
-export MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
+export PATH=~/.local/bin/:$PATH
+ export MANPATH="/usr/local/man:$MANPATH"
 export NODE_OPTIONS=--max_old_space_size=4096
-export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
-export GITHUB_PAT=3692d8f3fb00bcf3c89d62ba4a49f66d99ddfbc3
 
 # get a password from vault and copy it to the clipboard
 password() {
-    vault $1 | pbcopy
+	vault $1 | pbcopy
 	echo "password copied"
 }
 
@@ -25,7 +20,6 @@ clone() {
 	VAR=$1
 	GITPATH=${VAR##*/}
 	DIRNAME=${GITPATH%%.*}
-
 	git clone ${VAR} && cd ${DIRNAME}
 }
 
@@ -49,7 +43,6 @@ alias gb='git branch'
 alias gs='git status -sb' # upgrade your git if -sb breaks for you. it's fun.
 alias spacemacs='XLIB_SKIP_ARGB_VISUALS=1 emacs'
 alias gfxd='git clean -fxd'
-unalias gm
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
